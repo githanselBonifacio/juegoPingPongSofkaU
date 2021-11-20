@@ -1,3 +1,4 @@
+
 var game = function(){
     let time = 60;
     let movement = 20;
@@ -24,16 +25,26 @@ var game = function(){
         player2.keyPress = false;
         player2.keyCode = null;
     }
-
+    function musica_fin(){
+        var audio = document.getElementById("musica_fondo");
+        padre = audio.parentNode;
+		padre.removeChild(audio);
+        document.replaceChild()
+        var audio_fin = document.getElementById("musica_fin");
+        audio_fin.setAttribute("autoplay","true");
+    }
+   
     function stop(){
         clearInterval(controlGame);
         document.body.style.background = "rgb(255, 127, 0)";
+        musica_fin();
     }
 
     function play(){
         moveBall();
         moveBar();
         checkIfLost();
+        document.body.style.background = "rgb(0,0,0)";
     }
 
     function checkIfLost(){
@@ -147,6 +158,6 @@ var game = function(){
         if(e.keyCode == 79 || e.keyCode == 76)
             player2.keyPress = false;
     }
-
     start();
+    
 }();

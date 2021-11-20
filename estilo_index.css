@@ -23,6 +23,11 @@
     background-color: yellowgreen;
  }
 
+ #juego{
+     width:100%;
+     height:100%;
+ }
+
 .indicacion_izquierda { 
     grid-area: indicacion_izquierda;
     background-color:bisque; 

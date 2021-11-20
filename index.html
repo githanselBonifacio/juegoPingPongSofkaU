@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo_index.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="botones.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/estilo_index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/botones.css" type="text/css" media="all" />
+    
     <title>Ping Pong-Sofka U</title>
     
 </head>
@@ -15,7 +16,7 @@
             <h1>Juego de ping Pong sofka U</h1>
         </div>
         <div class="zona_juego">
-            <iframe src = "juego.html" id = "juego"></iframe>
+            <iframe src = "/vistas/juego.html" id = "juego"></iframe>
         </div>
         <div class="indicacion_izquierda">
             <img src="recursos/imagenes/controles izquierda.PNG"  class = "controles_img">
@@ -25,12 +26,14 @@
             <img src="recursos/imagenes/controles derecha.PNG" class = "controles_img">
         
         </div>
+        
         <div class="pie">
-            <input class = "bubbly-button" type="button" value="Reiniciar" onclick="CapacityChart();">
-            <input class = "bubbly-button" type="button" value="Jugar" onclick="CapacityChart();">
+            <input class = "bubbly-button" type="button" value="Reiniciar" onclick="start();">
+            <input class = "bubbly-button" type="button" value="Jugar" onclick="start();">
             <input class = "bubbly-button" type="button" value="finalizar" onclick="CapacityChart();">
         </div>
       </div>
-      <script src="funciones_botones.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/funciones_botones.js"></script>
 </body>
 </html>

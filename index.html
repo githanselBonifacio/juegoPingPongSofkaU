@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo_index.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/css/botones.css" type="text/css" media="all" />
-    
+    <script src="/js/controles.js"></script>
+    <script src="/js/funciones_botones.js"></script>
     <title>Ping Pong-Sofka U</title>
     
 </head>
 <body>
-    <audio  autoplay=true loop=true>
-        <source src="/recursos/audio/fondo_juego.mp3" type="audio/mp3">
-    </audio>
+    <audio  autoplay=true loop=true id="musica_fondo"src="/recursos/audio/fondo_juego.mp3" type="audio/mp3"></audio>
+    <audio  id="musica_fin"src="/recursos/audio/fin_del_juego.mp3" type="audio/mp3"></audio>
 
     <div class="container">
         <div class="encabezado">
             <h1>Juego de ping Pong sofka U</h1>
         </div>
-        <div class="zona_juego">
+        <div class="zona_juego" id = "espacio_juego">
             <iframe src = "/vistas/juego.html" id = "juego"></iframe>
         </div>
         <div class="indicacion_izquierda">
@@ -31,13 +31,14 @@
         
         </div>
         
+        
         <div class="pie">
-            <input class = "bubbly-button" type="button" value="Reiniciar" onclick="start();">
-            <input class = "bubbly-button" type="button" value="Jugar" onclick="start();">
-            <input class = "bubbly-button" type="button" value="finalizar" onclick="CapacityChart();">
+            <input class = "bubbly-button" type="button" value="Reiniciar" onclick="javascript:location.reload()">
+            <input class = "bubbly-button" type="button" value="Jugar" onclick="start()">
+            <input class = "bubbly-button" type="button" value="finalizar" onclick="detener_musica()";>
         </div>
       </div>
-      <script src="/js/main.js"></script>
-      <script src="/js/funciones_botones.js"></script>
+      
+      
 </body>
 </html>

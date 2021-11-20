@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.6fr 700px 0.5fr;
+  grid-template-rows: 0.5fr 400px 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "indicacion_izquierda zona_juego indicacion_derecha"
+    "pie pie pie";
+}
+
+.encabezado { 
+    grid-area: encabezado;
+    background-color:aqua; 
+}
+.encabezado h1{
+    text-align: center;
+}
+
+.zona_juego { 
+    grid-area: zona_juego;
+    background-color: yellowgreen;
+ }
+
+.indicacion_izquierda { 
+    grid-area: indicacion_izquierda;
+    background-color:bisque; 
+}
+
+.indicacion_derecha { 
+    grid-area: indicacion_derecha;
+    background-color:brown;
+ }
+
+.pie {
+     grid-area: pie;
+     background-color:blue;
+     }

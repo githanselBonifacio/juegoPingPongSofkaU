@@ -25,14 +25,6 @@ var game = function(){
         player2.keyPress = false;
         player2.keyCode = null;
     }
-    function musica_fin(){
-        var audio = document.getElementById("musica_fondo");
-        padre = audio.parentNode;
-		padre.removeChild(audio);
-        document.replaceChild()
-        var audio_fin = document.getElementById("musica_fin");
-        audio_fin.setAttribute("autoplay","true");
-    }
    
     function stop(){
         clearInterval(controlGame);

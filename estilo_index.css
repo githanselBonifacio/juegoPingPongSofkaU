@@ -40,6 +40,11 @@ body{
    
 }
 
+.controles_img{
+    padding-top: 35px;
+    
+}
+
 .indicacion_derecha { 
     grid-area: indicacion_derecha;
     
@@ -47,5 +52,7 @@ body{
 
 .pie {
      grid-area: pie;
+    
+     
      }
 

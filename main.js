@@ -1,5 +1,5 @@
 var game = function(){
-    let time = 50;
+    let time = 60;
     let movement = 20;
     let movementBar = 20;
     let width = document.documentElement.clientWidth - movement;
@@ -27,7 +27,7 @@ var game = function(){
 
     function stop(){
         clearInterval(controlGame);
-        document.body.style.background = "#f00";
+        document.body.style.background = "rgb(255, 127, 0)";
     }
 
     function play(){
